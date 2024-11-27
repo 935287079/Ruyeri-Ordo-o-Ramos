@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruyeri Brenson Ordoño Ramos - Portafolio</title>
+    <title>Ruyeri Brenson Ordoño Ramos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,6 +21,23 @@
             padding: 1rem;
             border-radius: 5px;
         }
+        nav {
+            background-color: #3498db;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         section {
             background-color: white;
             margin: 20px 0;
@@ -32,19 +50,26 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
-        ul.social-links {
+        ul.social-links, ul.student-links {
             list-style: none;
             padding: 0;
         }
-        ul.social-links li {
+        ul.social-links li, ul.student-links li {
             margin: 5px 0;
         }
-        ul.social-links a {
+        ul.social-links a, ul.student-links a {
             color: #3498db;
             text-decoration: none;
         }
-        ul.social-links a:hover {
+        ul.social-links a:hover, ul.student-links a:hover {
             text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -55,22 +80,32 @@
         <p>📧 ruyeri.ordono@ucsp.edu.pe</p>
     </header>
 
-    <section>
+    <nav>
+        <a href="#bienvenido">Inicio</a>
+        <a href="#acerca">Acerca de mí</a>
+        <a href="#educacion">Educación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#companeros">Compañeros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="bienvenido">
         <h2>Bienvenido a mi página personal</h2>
         <p>Hola, soy Ruyeri Brenson Ordoño Ramos, estudiante de la carrera de Administración de Empresas.</p>
     </section>
 
-    <section>
+    <section id="acerca">
         <h2>Acerca de mí</h2>
         <p>Mi nombre es Ruyeri Brenson Ordoño Ramos y soy estudiante de la carrera de Administración de Empresas en la Universidad Católica San Pablo. Ingresé a esta universidad en el año 2021. Desde entonces, he estado desarrollando mis conocimientos y habilidades en el campo de la administración y la gestión empresarial, buscando a futuro especializarme en el área de marketing.</p>
     </section>
 
-    <section>
+    <section id="educacion">
         <h2>Mi Educación</h2>
         <p>Universidad Católica San Pablo - Administración de Empresas (2021 - presente)</p>
     </section>
 
-    <section>
+    <section id="habilidades">
         <h2>Habilidades</h2>
         <ul>
             <li>Gestión de proyectos</li>
@@ -80,13 +115,13 @@
         </ul>
     </section>
 
-    <section>
+    <section id="cursos">
             <h2>Cursos</h2>
             <ul>
                <li>Calculo en varias variables - <a href="https://www.linkedin.com/in/c%C3%A9sar-gallegos-esquivias-5749b2141/" target="_blank">Prof. César Gallegos Esquivias</a></li>
                <li>Pensamiento critico e innovacion - <a href="https://www.linkedin.com/in/ana-elizabeth-g%C3%B3mez-burns-4502263b/" target ="_blank">Prof. Ana Gómez Burns</a></li>
                <li>Contabilidad 3 - <a href="https://www.linkedin.com/in/jesus-atencio-muchica-3bb31235/" target="_blank">Prof. Jesus Atencio Muchica</a></li>
-               <li>Historia Occidental - <span>Prof. Ana Maria Vargas del Carpio (Sin perfil en LinkedIn)</span></li>
+               <li>Historia Occidental - <span>Prof. Ana Maria Vargas del Carpio</span></li>
                <li>Liderazgo - <a href="https://www.linkedin.com/in/juan-alonso-sard%C3%A1-candia-1b535768/" target="_blank">Prof. Juan Alonso Sardá Candia</a></li>
                <li>Derecho Empresarial - <a href="https://www.linkedin.com/in/marco-alberto-diaz-begazo-a0558871/" target="_blank">Prof. Marco Alberto Diaz Begazo</a></li>
                <li>Introducción a la Ciencia de la Computación - 
@@ -98,7 +133,7 @@
             </ul> 
     </section>
 
- <section>
+    <section id="companeros">
         <h2>Compañeros de Clase</h2>
         <ul class="student-links">
             <li><a href="https://eduardomaque.github.io/Eduardo-Sebastian-Mendoza-Maque/" target="_blank">Eduardo Sebastian Mendoza Maque</a></li>
@@ -120,7 +155,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="contacto">
         <h2>Contacto</h2>
         <p>Si deseas ponerte en contacto conmigo, no dudes en enviarme un correo electrónico a ruyeri.ordono@ucsp.edu.pe.</p>
         
@@ -131,7 +166,7 @@
         </ul>
     </section>
 
-    <footer style="text-align: center; background-color: #2c3e50; color: white; padding: 10px;">
+    <footer>
         <p>© 2024 Ruyeri Brenson Ordoño Ramos | Todos los derechos reservados</p>
     </footer>
 </body>
